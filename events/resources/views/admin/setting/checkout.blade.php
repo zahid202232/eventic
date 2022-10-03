@@ -52,15 +52,15 @@
     </legend>
         <div id="form_show_tickets_left_on_cart_modal">
             <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="form_google_recaptcha_enabled_0" name="form[show_tickets_left_on_cart_modal]" required="required" class="custom-control-input" vlaue="yes" checked="checked">
-            <label class="custom-control-label " for="app_layout_settings_show_gdpr_compliance_page_0">
+            <input type="radio" id="form_google_recaptcha_enabled_14" name="form[show_tickets_left_on_cart_modal]" required="required" class="custom-control-input" vlaue="yes" checked="checked">
+            <label class="custom-control-label " for="app_layout_settings_show_gdpr_compliance_page_14">
                    <span class="option"> Yes</span>
                </label>
             </div>
             
             <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="form_google_recaptcha_enabled_1" name="form[show_tickets_left_on_cart_modal]" required="required" class="custom-control-input" value="no" >
-            <label class="custom-control-label " for="form_google_recaptcha_enabled_1">
+            <input type="radio" id="form_google_recaptcha_enabled_15" name="form[show_tickets_left_on_cart_modal]" required="required" class="custom-control-input" value="no" >
+            <label class="custom-control-label " for="form_google_recaptcha_enabled_15">
                    <span class="option">on</span>
                </label>
             </div>
@@ -89,15 +89,15 @@
     </legend>
         <div id="form_show_tickets_left_on_cart_modal">
             <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="form_google_recaptcha_enabled_0" name="form[google_recaptcha_enabled]" required="required" class="custom-control-input" vlaue="yes" checked="checked">
-            <label class="custom-control-label " for="app_layout_settings_show_gdpr_compliance_page_0">
+            <input type="radio" id="form_google_recaptcha_enabled_16" name="form[google_recaptcha_enabled]" required="required" class="custom-control-input" vlaue="yes" checked="checked">
+            <label class="custom-control-label " for="app_layout_settings_show_gdpr_compliance_page_16">
                    <span class="option"> Yes</span>
                </label>
             </div>
             
             <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="form_show_tickets_left_on_cart_modal_1" name="form[google_recaptcha_enabled]" required="required" class="custom-control-input" value="no" >
-            <label class="custom-control-label " for="form_show_tickets_left_on_cart_modal_1">
+            <input type="radio" id="form_show_tickets_left_on_cart_modal_17" name="form[google_recaptcha_enabled]" required="required" class="custom-control-input" value="no" >
+            <label class="custom-control-label " for="form_show_tickets_left_on_cart_modal_17">
                    <span class="option">on</span>
                </label>
             </div>
