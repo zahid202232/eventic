@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Conttrollers\SettingConttroller;
+use App\Http\Conttrollers\Admin\SettingConttroller;
 
 Route::redirect('/', '/login');
 Route::get('/home', function () {
@@ -86,4 +86,4 @@ Route::get('/pdf',function(){
 });
 Route::post('company/password/{token}', [App\Http\Controllers\Admin\CompanyController::class,'createpassword'])->name('create.password');
 
-Route::get('setting', [SettingController::class, 'index'])->name('admin.setting.index');
+Route::get('setting', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin.setting.index');
