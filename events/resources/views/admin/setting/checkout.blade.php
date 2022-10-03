@@ -118,6 +118,9 @@
         </label>
         <input type="text" id="form_google_recaptcha_secret_key" name="form[google_recaptcha_secret_key]"   class="form-control" value="6Ldio6wUAAAAAIp-aWdIxzMv24IA3qZv7-sibuS2">
        </div>
+       <div class="form-group">
+    <button type="submit" id="app_layout_settings_save" name="app_layout_settings[save]" class="btn btn-primary btn" >Save</button>
+     </div>
 </div>   
 </div>
 
