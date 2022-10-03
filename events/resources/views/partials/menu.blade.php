@@ -231,7 +231,7 @@
 
                             </i>
                             <p>
-                               Settings
+                               Homepage
                             </p>
                         </a>
                     </li>
