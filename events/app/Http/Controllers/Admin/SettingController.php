@@ -16,4 +16,7 @@ class SettingController extends Controller
     public function menu(){
         return view('admin.setting.menu');
     }
+    public function payment(){
+        return view('admin.setting.payment-fees');
+    }
 }
