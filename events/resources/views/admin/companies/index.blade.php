@@ -133,30 +133,21 @@
 
      <!--  -->
      <div class="form-group">
-        <label  class="required" for="app_layout_settings_date_timezone" >
-        Timezone
+    <label for="app_layout_settings_Terms of service page slug" class="required">
+    Timezone
         </label>
-        <div class="select2-container select2 form-control select2-container-active select2-dropdown-open" id="s2id_app_layout_settings_date_timezone">
-            <a href="javascript:void(0)" class="select2-choice" tabindex="-1">
-                <span class="select2-chosen" id=" select2-chosen-1" >America / New York</span>
-                <abbr class="select2-search-choice-close"></abbr>
-                <span class="select2-arrow" role="presentation"></span>
-                <b class="presentation"></b>
-            </a>
-            <lable for="s2id_autogen1" class="select2-offscreen">Timezone</lable>
-            <input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1" disabled>
-        </div>
+             <div class="form-group">
+              <select class=" js-example-basic-multiple form-control" id="Terms of service">  
+              <option value="Africa/Abidjan">Africa / Abidjan </option>  
+             <option value="Africa/Accra">Africa/Accra </option> 
+             <option value="Africa/Addis_Ababa">Africa/Addis_Ababa </option> 
+             <option value="Africa/Algiers">Africa/Algiers </option> 
+             <option value="Africa/Asmara">Africa/Asmara </option> 
+              
+              </select>
+             </div>  
 
         <!--  -->
-
-        <select id="app_layout_settings_date_timezone" name="app_layout_settings[date_timezone]" class="select2 form-control select2-offscreen" data-sort-options="1" tabindex="-1" title="Timezone">
-          <option value="Africa/Abidjan">Africa / Abidjan </option>  
-          <option value="Africa/Accra">Africa/Accra </option> 
-          <option value="Africa/Addis_Ababa">Africa/Addis_Ababa </option> 
-          <option value="Africa/Algiers">Africa/Algiers </option> 
-          <option value="Africa/Asmara">Africa/Asmara </option> 
-    
-        </select>
  
         <!--  -->
         <!--  -->
@@ -547,7 +538,7 @@
         Terms of service page slug
         </label>
              <div class="form-group">
-              <select class="form-control" id="Terms of service">  
+              <select class=" js-example-basic-multiple form-control" id="Terms of service">  
                <option value="service">Terms of service </option>
                <option value="About as">Abbout as</option>
                <option value="Cookie policy">Cookie policy</option>
@@ -588,7 +579,7 @@
     Privacy policy page slug
         </label>
              <div class="form-group">
-              <select class="form-control" id="Terms of service">  
+              <select class="js-example-basic-multiple form-control" id="Terms of service">  
                <option value="service">Terms of service </option>
                <option value="About as">Abbout as</option>
                <option value="Cookie policy">Cookie policy</option>
@@ -648,12 +639,14 @@
     
     
     <!--  -->
+   
+
     <div class="form-group">
     <label for="app_layout_settings_gdpr_compliance_page_slug" class="required">
     Gdpr compliance page slug
         </label>
              <div class="form-group">
-              <select class="form-control" id="Terms of service">  
+              <select class="js-example-basic-multiple form-control" id="Terms of service">  
                <option value="service">Terms of service </option>
                <option value="About as">Abbout as</option>
                <option value="Cookie policy">Cookie policy</option>
