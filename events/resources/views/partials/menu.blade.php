@@ -180,7 +180,51 @@
                         </a>
                     </li>
                 @endcan
-               
+                <li class="nav-item nav-item has-treeview {{ request()->is('admin/sites*') ? 'menu-open' : '' }}{{ request()->is('admin/guards*') ? 'menu-open' : '' }} {{ request()->is('admin/cluster-ids*') ? 'menu-open' : '' }}">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="fa-fw nav-icon fas fa-home"></i>
+                            <p>
+                               Sites Management
+                               <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            @can('site_access')
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.sites.index') }}"
+                                    class="nav-link {{ request()->is('admin/sites') || request()->is('admin/sites/*') ? 'active' : '' }}">
+                                        <i class="fas fa-circle c-sidebar-nav-icon"></i>
+                                        <p>
+                                            Site
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('cluster_id_access')
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.cluster-ids.index') }}"
+                                        class="nav-link {{ request()->is('admin/cluster-ids') || request()->is('admin/cluster-ids/*') ? 'active' : '' }}">
+                                        <i class="fas fa-circle c-sidebar-nav-icon"></i>
+                                        <p>
+                                            Cluster
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+							
+							 @can('guard_access')
+                    <li class="nav-item">
+                        <a href="{{ route('admin.guards.index') }}"
+                            class="nav-link {{ request()->is('admin/guards') || request()->is('admin/guards/*') ? 'active' : '' }}">
+                            <i class="fas fa-circle c-sidebar-nav-icon"></i>
+                            <p>
+                                Site Assignment
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a href="{{ route("admin.setting.index") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
                             <i class="fa-fw nav-icon far fa-building">
