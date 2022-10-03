@@ -4,7 +4,12 @@ $(document).ready(function () {
   moment.updateLocale('en', {
     week: {dow: 1} // Monday is the first day of the week
   })
-
+  $(".nav .has-treeview").click(function(){
+    $(this).nextAll().removeClass('menu-open menu-is-opening');
+    $(this).prevAll().removeClass('menu-open menu-is-opening');
+    $(this).nextAll().find('.nav-treeview').css('display', 'none');
+    $(this).prevAll().find('.nav-treeview').css('display', 'none');
+  });
   $('.date').datetimepicker({
     format: 'YYYY-MM-DD',
     locale: 'en',

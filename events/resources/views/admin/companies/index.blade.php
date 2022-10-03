@@ -220,20 +220,24 @@
      </div>
 
      <!--  -->
-   <ul class="nav nav-pills mb-3">
+
+     
+    <ul class="nav nav-pills mb-3">
+
     <li class="nav-item" >
-        <a class="nav-link"data-toggle="tab" href="#website_description_en">Website description</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_en" onclick="myFunction()">Website description</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"data-toggle="tab" href="#website_description_fr">Description du site</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_fr" onclick="myFunction()">Description du site</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"data-toggle="tab" href="#website_description_es">Descripción del lugar</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_es" onclick="myFunction()">Descripción del lugar</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"data-toggle="tab" href="#website_description_ar">وصف الموقع</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_ar" onclick="myFunction()">وصف الموقع</a>
     </li>
-   </ul>
+   </ul> 
+
      
    <!--  -->
   <div class="tab-content">
@@ -343,7 +347,18 @@
         <legend class="col-form-label required">
         Application theme
         </legend>
-        <div id="app_layout_settings_app_theme">
+    <div class="color">
+    <input type="radio" id="Pink" name="num" value="Pink" onchange="get(this.id)">Pink
+    <input type="radio" id="Light blue" name="num" value="Light blue" onchange="get(this.id)">Light blue
+    <input type="radio" id="Orange" name="num" value="Orange" onchange="get(this.id)">Orange
+    <input type="radio" id="red" name="num" value="red" onchange="get(this.id)">red
+    <input type="radio" id="green" name="num" value="green" onchange="get(this.id)">green
+        </div>
+      
+       
+    </div>
+    
+        <!-- <div id="app_layout_settings_app_theme">
             <div class="custom-control custom-radio custom-control-inline">
             <input type="radio" id="app_layout_settings_app_theme_0" name="app_layout_settings[app_theme]" required="required"  class="custom-control-input" value="orange" checked="checked">
             <label for="custom-control-label required"  for="app_layout_settings_app_theme_0">
@@ -377,14 +392,14 @@
         </label>
             </div>
         
-        </div>
+        </div> -->
 
      </fieldset>
      
      <!--  -->
 
      <div class="form-group">
-        <div id="appThemeColorPreview" class="shadow img-sm" style="background-color: rgb(53, 206, 141);"> </div>
+     <div id="box1" with="10px" border:2px solid black>
      </div>
 
     <fieldset class="form-group">
@@ -737,6 +752,16 @@
 </script>
 <!--  -->
 <script>
+
+const get = (id) =>{
+    document.getElementById('box1').style.background = document.getElementById(id).value;
+
+
+};
+
+
+
+
 
 
 $(document).ready(function() {
