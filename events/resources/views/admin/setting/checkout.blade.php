@@ -425,6 +425,9 @@
 
    </small>
 </div>
+<div class="form-group">
+    <button type="submit" id="app_layout_settings_save" name="app_layout_settings[save]" class="btn btn-primary btn" >Save</button>
+     </div>
 
 </div>   
 </div>
