@@ -235,6 +235,16 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.setting.menu") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                               menu
+                            </p>
+                        </a>
+                    </li>
             
                 @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
                     @can('profile_password_edit')
