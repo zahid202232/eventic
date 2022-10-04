@@ -189,4 +189,43 @@ color: #f67611!important;
     background-color: #d96408;
     border-radius: 10px;
 }
+#incrementText{
+width: 260%;
+}
+.btn button{
+    background-color:  #d96408;
+    border-radius: 10px;
+}
+#box1{
+    border: 2px solid black;
+    height: 80px;
+    width: 10%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.text3{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.color input{
+    color:  #d96408;
+}
 
+.dis{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.dis:hover{
+    background-color: #d96408;
+    color: white;
+}
+.tab-content{
+    padding-top: 15px;
+}
+/* tab */
+
+
+
+/* end */

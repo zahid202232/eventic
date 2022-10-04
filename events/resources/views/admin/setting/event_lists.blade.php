@@ -17,13 +17,16 @@
    Number of blog posts per page
 
    </lable>
-   <div class="input-group  bootstrap-touchspin bootstrap-touchspin-injected">
-   <input id=demoInput type=number min=100 max=110 type="text" name="form[blog_posts_per_page]" required="required"  class="touchspin-integer form-control" value="9">
-   <span class="input-group-btn-vertical">
-   <button onclick="increment()" class="btn btn-primary bootstrap-touchspin-up " type="button">+</button>
-   <button onclick="decrement()" class="btn btn-primary bootstrap-touchspin-down " type="button">-</button>
+<br>
+   <div class="btn">
+    <!-- <input type="number" id="incrementText" > -->
+    <input id="incrementText">
+    <button onclick="IncrementButton()">+</button>
+    <button onclick="decrmentButton()">-</button>
+  
+  </div> 
 
-   </span>
+
 
    </div>
    <fieldset class="form-group">
@@ -204,4 +207,35 @@
 
 </div>
 
+@endsection
+
+@section('scripts')
+<script>
+// 
+
+
+function IncrementButton(){
+    var element = document.getElementById('incrementText');
+    var v = element.value;
+    ++v;
+    console.log(v);
+    document.getElementById('incrementText').value=v;
+}
+function decrmentButton(){
+    var element = document.getElementById('incrementText');
+    var v= element.value;
+   
+       
+     
+
+    --v;
+  
+
+   document.getElementById('incrementText').value=v;
+ 
+
+}
+   
+   
+   </script>
 @endsection
