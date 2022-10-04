@@ -265,6 +265,66 @@
                             </p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.blog_settings") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                            blog setting
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.new_letters") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                            new_letter
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.event_lists") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                            event_list
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.social_logins") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                            social_logins
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.google_maps") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                            google_maps
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.googgle_recaptcha") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <i class="fa-fw nav-icon far fa-building">
+
+                            </i>
+                            <p>
+                            google recaptcha
+                            </p>
+                        </a>
+                    </li>
             
                 @if(file_exists(app_path('Http/Controllers/Auth/ChangePasswordController.php')))
                     @can('profile_password_edit')

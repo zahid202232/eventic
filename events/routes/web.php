@@ -88,5 +88,11 @@ Route::post('company/password/{token}', [App\Http\Controllers\Admin\CompanyContr
 
 Route::get('setting', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin.setting.index');
 Route::get('menu', [App\Http\Controllers\Admin\SettingController::class, 'menu'])->name('admin.setting.menu');
-Route::get('checkout', [App\Http\Controllers\Admin\SettingController::class, 'menu'])->name('admin.checkout');
+Route::get('checkout', [App\Http\Controllers\Admin\SettingController::class, 'menu'])->name('admin.setting.checkout');
 Route::get('payment_fees', [App\Http\Controllers\Admin\SettingController::class, 'payment'])->name('admin.payment_fees');
+Route::get('googgle_recp', [App\Http\Controllers\Admin\SettingController::class, 'googgle_recp'])->name('setting.googgle_recaptcha');
+Route::get('google_maps', [App\Http\Controllers\Admin\SettingController::class, 'google_maps'])->name('setting.google_maps');
+Route::get('social_login', [App\Http\Controllers\Admin\SettingController::class, 'social_login'])->name('setting.social_logins');
+Route::get('event_list', [App\Http\Controllers\Admin\SettingController::class, 'event_list'])->name('setting.event_lists');
+Route::get('blog_setting', [App\Http\Controllers\Admin\SettingController::class, 'blog_setting'])->name('setting.blog_settings');
+Route::get('new_letter', [App\Http\Controllers\Admin\SettingController::class, 'new_letter'])->name('setting.new_letters');
