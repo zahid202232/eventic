@@ -32,6 +32,8 @@
             <button class="btn btn-primary bootstrap-touchspin-up " type="button">-</button>
            </span>    
         </div>
+
+        
           </div>
    
 

@@ -227,7 +227,8 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("admin.setting.index") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <i class='far fa-home'></i>
 
                             </i>
                             <p>
@@ -237,8 +238,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("admin.setting.menu") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
-
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class="fa-solid fa-building"></i> -->
+                            <i class='fas fa-align-justify'></i>
                             </i>
                             <p>
                                menu
@@ -247,7 +249,11 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("admin.setting.checkout") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='fal fa-sign-out-alt'></i> -->
+                            <!-- <i class='far fa-inbox-adn'></i> -->
+                            <!-- <i class='fal fa-arrow-alt-to-right'></i> -->
+                            <i class='fas fa-ad'></i>
 
                             </i>
                             <p>
@@ -257,9 +263,13 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("admin.payment_fees") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-money-check-alt'></i> -->
+                            <i class='fas fa-money-check-alt'></i>
 
-                            </i>
+
+
+                            <!-- </i> -->
                             <p>
                             payment fees
                             </p>
@@ -267,7 +277,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("setting.blog_settings") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-blog'></i> -->
+                            <i class='fas fa-blog'></i>
 
                             </i>
                             <p>
@@ -277,7 +289,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("setting.new_letters") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='fal fa-newspaper'></i> -->
+                            <i class='fas fa-newspaper'></i>
 
                             </i>
                             <p>
@@ -287,7 +301,11 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("setting.event_lists") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-clipboard-list'></i> -->
+                            <i class='fas fa-clipboard-list'></i>
+
+
 
                             </i>
                             <p>
@@ -297,8 +315,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("setting.social_logins") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
-
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-bullhorn'></i> -->
+                            <i class='fas fa-at'></i>
                             </i>
                             <p>
                             social_logins
@@ -307,7 +326,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("setting.google_maps") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-landmark'></i> -->
+                            <i class='fas fa-globe'></i>
 
                             </i>
                             <p>
@@ -317,9 +338,13 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ route("setting.googgle_recaptcha") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-landmark'></i> -->
+                            <!-- <i class='far fa-globe'></i> -->
+                            <i class='fas fa-desktop'></i>
 
-                            </i>
+
+                            <!-- </i> -->
                             <p>
                             google recaptcha
                             </p>

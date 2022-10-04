@@ -389,7 +389,7 @@
      <div id="box1" >
 
      </div>
-    </div>
+    
 
      </fieldset>
      
@@ -689,7 +689,7 @@
 
 </div>       
 </div>
-
+        <!-- </div> -->
 
 
 @endsection

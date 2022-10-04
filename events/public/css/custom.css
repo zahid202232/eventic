@@ -210,20 +210,24 @@ width: 260%;
 .color input{
     color:  #d96408;
 }
+input[name="num"]{
+    color: #d96408;
+}
 
 .dis{
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 10px;
     padding-right: 20px;
+    border-radius: 20px;
 }
 .dis:hover{
     background-color: #d96408;
     color: white;
 }
-.tab-content{
+/* .tab-content{
     padding-top: 15px;
-}
+} */
 /* tab */
 
 
