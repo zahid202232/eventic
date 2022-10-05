@@ -201,8 +201,20 @@ width: 260%;
         #incrementText4{
             width: 260%;
             }
+            #incrementText12{
+                width: 260%;
+                }
+                #incrementText13{
+                    width: 260%;
+                    }
             #timeleft{
                 padding-top: 35px;
+            }
+
+
+
+            .form-save{
+                margin-left: 25px;
             }
 .btn button{
     background-color:  #d96408;

@@ -515,8 +515,9 @@
             </div>
             <br>
             <br>
-            <div class="form-group">
-                        <button type="submit" id="app_layout_settings_save" name="app_layout_settings[save]"
+            <br>
+            <div class="form-save">
+                        <button type="button" id="app_layout_settings_save" name="app_layout_settings[save]"
                             class="btn btn-primary btn">Save</button>
                     </div>
           </fieldset>
