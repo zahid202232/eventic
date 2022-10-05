@@ -225,11 +225,7 @@ input[name="num"]{
     background-color: #d96408;
     color: white;
 }
-/* .tab-content{
-    padding-top: 15px;
-} */
-/* tab */
-
-
-
-/* end */
+.custom-control-input:checked~.custom-control-label::before{
+    background-color: #ed5c00 !important;
+    border-color: #ec5c00 !important;
+}

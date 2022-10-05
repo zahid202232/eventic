@@ -88,7 +88,7 @@ Route::post('company/password/{token}', [App\Http\Controllers\Admin\CompanyContr
 
 Route::get('setting', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin.setting.index');
 Route::get('menu', [App\Http\Controllers\Admin\SettingController::class, 'menu'])->name('admin.setting.menu');
-Route::get('checkout', [App\Http\Controllers\Admin\SettingController::class, 'menu'])->name('admin.setting.checkout');
+Route::get('checkout', [App\Http\Controllers\Admin\SettingController::class, 'checkout'])->name('admin.setting.checkout');
 Route::get('payment_fees', [App\Http\Controllers\Admin\SettingController::class, 'payment'])->name('admin.payment_fees');
 Route::get('googgle_recp', [App\Http\Controllers\Admin\SettingController::class, 'googgle_recp'])->name('setting.googgle_recaptcha');
 Route::get('google_maps', [App\Http\Controllers\Admin\SettingController::class, 'google_maps'])->name('setting.google_maps');
