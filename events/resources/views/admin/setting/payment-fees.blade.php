@@ -378,8 +378,8 @@
             <div class="btn">
     <!-- <input type="number" id="incrementText" > -->
     <input id="incrementText13">
-    <button onclick="IncrementButton13()">+</button>
-    <button onclick="decrmentButton13()">-</button>
+    <button type="button" onclick="IncremenButton()">+</button>
+    <button type="button" onclick="decrmenButton()">-</button>
   </div>
             </div>
           </div>
@@ -513,17 +513,14 @@
                 >
               </div>
             </div>
+            <br>
+            <br>
+            <div class="form-group">
+                        <button type="submit" id="app_layout_settings_save" name="app_layout_settings[save]"
+                            class="btn btn-primary btn">Save</button>
+                    </div>
           </fieldset>
-          <div class="form-group">
-            <button
-              type="submit"
-              id="form_save"
-              name="form[save]"
-              class="btn btn-primary btn"
-            >
-              Save
-            </button>
-          </div>
+          
           <input
             type="hidden"
             id="form__token"
@@ -667,21 +664,24 @@ function decrmentButton(){
     --v;
    document.getElementById('incrementText12').value=v;
 }
+// +++++++++++++++++++++
+// 
 
-function IncrementButton13(){
+function IncremenButton(){
     var element = document.getElementById('incrementText13');
     var v = element.value;
     ++v;
     console.log(v);
     document.getElementById('incrementText13').value=v;
 }
-function decrmentButton13(){
+function decrmenButton(){
     var element = document.getElementById('incrementText13');
     var v= element.value;
     --v;
    document.getElementById('incrementText13').value=v;
 }
 
+// _____________________
 
 function IncrementButton3(){
     var element = document.getElementById('incrementText3');
@@ -695,7 +695,10 @@ function decrmentButton3(){
     var v= element.value;
     --v;
    document.getElementById('incrementText3').value=v;
+
 }
+
+// 
 </script>
 
 @endsection
