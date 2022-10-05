@@ -175,8 +175,8 @@
                 @endcan
                 @can('attendy_access')
                 <li class="nav-item">
-                    <a href="{{ route("admin.attendies.index") }}"
-                        class="nav-link {{ request()->is("admin/attendies") || request()->is("admin/attendies/*") ? "active" : "" }}">
+                    <a href="{{ route('admin.attendies.index') }}"
+                        class="nav-link {{ request()->is('admin/attendies') || request()->is('admin/attendies/*') ? 'active' : '' }}">
                         <i class="fa-solid fas fa-user-check" style="margin-right: 0.2rem;"></i>
                         <p>
                             {{ trans('cruds.attendy.title') }}
@@ -185,7 +185,7 @@
                 </li>
                 @endcan
                 <li
-                    class="nav-item nav-item has-treeview {{ request()->is('admin/sites*') ? 'menu-open' : '' }}{{ request()->is('admin/guards*') ? 'menu-open' : '' }} {{ request()->is('admin/cluster-ids*') ? 'menu-open' : '' }}">
+                    class="nav-item nav-item has-treeview {{ request()->is('admin/setting*') ? 'menu-open' : '' }}{{ request()->is('admin/layout_parameter_seo*') ? 'menu-open' : '' }} {{ request()->is('admin/menu*') ? 'menu-open' : '' }}">
                     <a class="nav-link nav-dropdown-toggle" href="#">
                         <i class="fa-fw nav-icon fas fa-cog"></i>
                         <p>
@@ -195,8 +195,8 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="{{ route("admin.setting.index") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('admin.setting.index') }}"
+                                class="nav-link {{ request()->is('admin/setting') || request()->is('admin/setting/*') ? 'active' : '' }}">
                                 <i class='fas nav-icon fa-home'></i>
                                 </i>
                                 <p>
@@ -205,18 +205,18 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("setting.layout_parameter_seo") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('setting.layout_parameter_seo') }}"
+                                class="nav-link {{ request()->is('admin/layout_parameter_seo') || request()->is('admin/layout_parameter_seo/*') ? 'active' : '' }}">
                                 <i class='fas nav-icon fa-ad'></i>
                                 </i>
                                 <p>
-                               layout, parameter, seo
+                                    layout, parameter, seo
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("admin.setting.menu") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('admin.setting.menu') }}"
+                                class="nav-link {{ request()->is('admin/menu') || request()->is('admin/menu/*') ? 'active' : '' }}">
 
                                 <i class='fas nav-icon fa-align-justify'></i>
                                 </i>
@@ -226,8 +226,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("admin.setting.checkout") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('admin.setting.checkout') }}"
+                                class="nav-link {{ request()->is('admin/checkout') || request()->is('admin/checkout/*') ? 'active' : '' }}">
 
                                 <i class='fas nav-icon fa-ad'></i>
 
@@ -238,51 +238,47 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("admin.payment_fees") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('admin.payment_fees') }}"
+                                class="nav-link {{ request()->is('admin/payment_fees') || request()->is('admin/payment_fees/*') ? 'active' : '' }}">
 
                                 <i class='fas nav-icon fa-money-check-alt'></i>
 
                                 <p>
-                                    payment fees
+                                    Payment fees
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("setting.blog_settings") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('setting.blog_settings') }}"
+                                class="nav-link {{ request()->is('admin/blog_settings') || request()->is('admin/blog_settings/*') ? 'active' : '' }}">
 
                                 <i class='fas nav-icon fa-blog'></i>
 
                                 </i>
                                 <p>
-                                    blog setting
+                                    Blog setting
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("setting.new_letters") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('setting.new_letters') }}"
+                                class="nav-link {{ request()->is('admin/new_letters') || request()->is('admin/new_letters/*') ? 'active' : '' }}">
 
                                 <i class='fas nav-icon fa-newspaper'></i>
 
                                 </i>
                                 <p>
-                                    new_letter
+                                    News letter
                                 </p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route("setting.event_lists") }}"
-                                class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <a href="{{ route('setting.event_lists') }}"
+                                class="nav-link {{ request()->is('admin/event_lists') || request()->is('admin/event_lists/*') ? 'active' : '' }}">
 
                                 <i class='fas nav-icon fa-clipboard-list'></i>
-
-
-
-                                </i>
                                 <p>
-                                    event_list
+                                    Event Lists
                                 </p>
                             </a>
                         </li>
@@ -293,7 +289,7 @@
                                 <i class='fas nav-icon fa-at'></i>
                                 </i>
                                 <p>
-                                    social_logins
+                                    Social logins
                                 </p>
                             </a>
                         </li>
