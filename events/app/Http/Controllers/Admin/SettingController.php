@@ -10,6 +10,9 @@ class SettingController extends Controller
     public function index(){
         return view('admin.setting.index');
     }
+    public function layout_parameter(){
+        return view('admin.setting.layout_parameter_seo');
+    }
     public function checkout(){
         return view('admin.setting.checkout');
     }

@@ -87,6 +87,7 @@ Route::get('/pdf',function(){
 Route::post('company/password/{token}', [App\Http\Controllers\Admin\CompanyController::class,'createpassword'])->name('create.password');
 
 Route::get('setting', [App\Http\Controllers\Admin\SettingController::class, 'index'])->name('admin.setting.index');
+Route::get('layout_parameter', [App\Http\Controllers\Admin\SettingController::class, 'layout_parameter'])->name('setting.layout_parameter_seo');
 Route::get('menu', [App\Http\Controllers\Admin\SettingController::class, 'menu'])->name('admin.setting.menu');
 Route::get('checkout', [App\Http\Controllers\Admin\SettingController::class, 'checkout'])->name('admin.setting.checkout');
 Route::get('payment_fees', [App\Http\Controllers\Admin\SettingController::class, 'payment'])->name('admin.payment_fees');
