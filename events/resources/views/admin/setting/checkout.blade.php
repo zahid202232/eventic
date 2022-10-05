@@ -18,7 +18,7 @@
         <form name="checkout_settings" method="post" novalidate="novalidate">
             <div id="form">
                 <div class="form-group">
-                    <label for="form_checkout_timeleft" class="required">
+                    <label for="form_checkout_timeleft" class="required" id="timeleft">
                         Timeleft
                     </label>
                     <small id="form_checkout_timeleft_help" class="form-text text-muted mb-3">
@@ -27,12 +27,17 @@
                         payment
                     </small>
                     <div class="input-group  bootstrap-touchspin bootstrap-touchspin-injected">
-                        <input type="text" id="form_checkout_timeleft" name="form[checkout_timeleft]"
-                            required="required" class="touchspin-integer form-control" data-min="100" data-max="3600"
-                            aria-describedby="form_checkout_timeleft_help" value="1800">
+                        
                         <span class="input-group-btn-vertical">
-                            <button class="btn btn-primary bootstrap-touchspin-up " type="button">+</button>
-                            <button class="btn btn-primary bootstrap-touchspin-up " type="button">-</button>
+                        <div class="btn">
+                    <!-- <input type="number" id="incrementText" > -->
+                                                                        <input id="incrementText4" >
+                                                                         <button onclick="IncrementsssButton()" type="button">+</button>
+                                                                          <button onclick="decrmentsssButton()" type="button">-</button>
+
+                                                                                 </div>
+                            <!-- <button class="btn btn-primary bootstrap-touchspin-up " type="button">+</button> -->
+                            <!-- <button class="btn btn-primary bootstrap-touchspin-up " type="button">-</button> -->
                         </span>
                     </div>
                 </div>
@@ -40,4 +45,26 @@
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+<script>
+// 
+
+
+function IncrementsssButton() {
+    var element = document.getElementById('incrementText4');
+    var v = element.value;
+    ++v;
+    console.log(v);
+    document.getElementById('incrementText4').value = v;
+}
+
+function decrmentsssButton() {
+    var element = document.getElementById('incrementText4');
+    var v = element.value;
+    --v;
+    document.getElementById('incrementText4').value = v;
+}
+</script>
 @endsection

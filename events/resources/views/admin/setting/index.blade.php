@@ -367,7 +367,7 @@
                     <!-- <input type="number" id="incrementText" > -->
                                                                         <input id="incrementText2" >
                                                                          <button onclick="IncrementssButton()" type="button">+</button>
-                                                                          <button onclick="decrmentssButton()" type="button">-</button>
+                                                                          <button onclick="decrmentss Button()" type="button">-</button>
 
                                                                                  </div>
                                                                             <!-- <input type="text" id="homepage_hero_settings_homepage_blogposts_number" name="homepage_hero_settings[homepage_blogposts_number]" required="required" class="touchspin-integer form-control" data-min="0" data-max="15" value="8" data-slug-id="number-of-blog-posts-to-show" data-category="user-data"> -->
