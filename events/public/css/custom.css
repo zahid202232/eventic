@@ -215,10 +215,8 @@ input[name="num"]{
 }
 
 .dis{
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-right: 20px;
+    padding: 10px 20px;
+ 
     border-radius: 20px;
 }
 .dis:hover{
