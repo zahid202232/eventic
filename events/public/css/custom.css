@@ -198,6 +198,12 @@ width: 260%;
     #incrementText2{
         width: 260%;
         }
+        #incrementText4{
+            width: 260%;
+            }
+            #timeleft{
+                padding-top: 35px;
+            }
 .btn button{
     background-color:  #d96408;
     border-radius: 10px;
