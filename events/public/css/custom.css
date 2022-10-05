@@ -192,6 +192,12 @@ color: #f67611!important;
 #incrementText{
 width: 260%;
 }
+#incrementText1{
+    width: 260%;
+    }
+    #incrementText2{
+        width: 260%;
+        }
 .btn button{
     background-color:  #d96408;
     border-radius: 10px;
@@ -232,4 +238,8 @@ input[name="num"]{
 .custom-control-input:checked~.custom-control-label::before{
     background-color: #ed5c00 !important;
     border-color: #ec5c00 !important;
+}
+.custom-control-label {
+    padding-left: 40px;
+    margin-bottom: 0;
 }
