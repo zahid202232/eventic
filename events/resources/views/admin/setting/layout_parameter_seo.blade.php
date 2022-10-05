@@ -260,19 +260,15 @@
             <br>
 
             <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#menu1" class="dis">Website description</a></li>
+                <li class="active"><a data-toggle="tab" href="#menu1" class="dis active show">Website description</a></li>
                 <!-- <li><a data-toggle="tab" href="#menu1">Website description</a></li> -->
                 <li><a data-toggle="tab" href="#menu2" class="dis">Descripción del lugar</a></li>
                 <li><a data-toggle="tab" href="#menu3" class="dis">وصف الموقع</a></li>
             </ul>
         </div>
         <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-                <h3>HOME</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-            <div id="menu1" class="tab-pane fade">
+            
+            <div id="menu1" class="tab-pane fade in active show">
                 <h3>Website description</h3>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
@@ -847,6 +843,7 @@ const get = (id) => {
 $(document).ready(function() {
     $(".nav-tabs a").click(function() {
         $(this).tab('show');
+        $(this).addClass('active')
     });
 });
 </script>
