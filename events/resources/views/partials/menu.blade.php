@@ -180,14 +180,173 @@
                         </a>
                     </li>
                 @endcan
-               
+                <li class="nav-item nav-item has-treeview {{ request()->is('admin/sites*') ? 'menu-open' : '' }}{{ request()->is('admin/guards*') ? 'menu-open' : '' }} {{ request()->is('admin/cluster-ids*') ? 'menu-open' : '' }}">
+                        <a class="nav-link nav-dropdown-toggle" href="#">
+                            <i class="fa-fw nav-icon fas fa-home"></i>
+                            <p>
+                               Sites Management
+                               <i class="right fa fa-fw fa-angle-left nav-icon"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            @can('site_access')
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.sites.index') }}"
+                                    class="nav-link {{ request()->is('admin/sites') || request()->is('admin/sites/*') ? 'active' : '' }}">
+                                        <i class="fas fa-circle c-sidebar-nav-icon"></i>
+                                        <p>
+                                            Site
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+                            @can('cluster_id_access')
+                                <li class="nav-item">
+                                    <a href="{{ route('admin.cluster-ids.index') }}"
+                                        class="nav-link {{ request()->is('admin/cluster-ids') || request()->is('admin/cluster-ids/*') ? 'active' : '' }}">
+                                        <i class="fas fa-circle c-sidebar-nav-icon"></i>
+                                        <p>
+                                            Cluster
+                                        </p>
+                                    </a>
+                                </li>
+                            @endcan
+							
+							 @can('guard_access')
+                    <li class="nav-item">
+                        <a href="{{ route('admin.guards.index') }}"
+                            class="nav-link {{ request()->is('admin/guards') || request()->is('admin/guards/*') ? 'active' : '' }}">
+                            <i class="fas fa-circle c-sidebar-nav-icon"></i>
+                            <p>
+                                Site Assignment
+                            </p>
+                        </a>
+                    </li>
+                @endcan
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a href="{{ route("admin.setting.index") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
-                            <i class="fa-fw nav-icon far fa-building">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <i class='far fa-home'></i>
 
                             </i>
                             <p>
-                               Settings
+                               Homepage
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.setting.menu") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class="fa-solid fa-building"></i> -->
+                            <i class='fas fa-align-justify'></i>
+                            </i>
+                            <p>
+                               menu
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.setting.checkout") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='fal fa-sign-out-alt'></i> -->
+                            <!-- <i class='far fa-inbox-adn'></i> -->
+                            <!-- <i class='fal fa-arrow-alt-to-right'></i> -->
+                            <i class='fas fa-ad'></i>
+
+                            </i>
+                            <p>
+                               checkout
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.payment_fees") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-money-check-alt'></i> -->
+                            <i class='fas fa-money-check-alt'></i>
+
+
+
+                            <!-- </i> -->
+                            <p>
+                            payment fees
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.blog_settings") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-blog'></i> -->
+                            <i class='fas fa-blog'></i>
+
+                            </i>
+                            <p>
+                            blog setting
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.new_letters") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='fal fa-newspaper'></i> -->
+                            <i class='fas fa-newspaper'></i>
+
+                            </i>
+                            <p>
+                            new_letter
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.event_lists") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-clipboard-list'></i> -->
+                            <i class='fas fa-clipboard-list'></i>
+
+
+
+                            </i>
+                            <p>
+                            event_list
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.social_logins") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-bullhorn'></i> -->
+                            <i class='fas fa-at'></i>
+                            </i>
+                            <p>
+                            social_logins
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.google_maps") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-landmark'></i> -->
+                            <i class='fas fa-globe'></i>
+
+                            </i>
+                            <p>
+                            google_maps
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("setting.googgle_recaptcha") }}" class="nav-link {{ request()->is("admin/setting") || request()->is("admin/setting/*") ? "active" : "" }}">
+                            <!-- <i class="fa-fw nav-icon far fa-building"> -->
+                            <!-- <i class='far fa-landmark'></i> -->
+                            <!-- <i class='far fa-globe'></i> -->
+                            <i class='fas fa-desktop'></i>
+
+
+                            <!-- </i> -->
+                            <p>
+                            google recaptcha
                             </p>
                         </a>
                     </li>

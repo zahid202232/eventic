@@ -3619,9 +3619,6 @@ input[type=submit].btn-block {
     border-radius: 50%
 }
 
-.custom-radio .custom-control-input:checked~.custom-control-label::before {
-    background-color: #007bff
-}
 
 .custom-radio .custom-control-input:checked~.custom-control-label::after {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ffffff'/%3E%3C/svg%3E")
@@ -12865,10 +12862,10 @@ label:not(.form-check-label):not(.custom-file-label) {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #007bff;
-    border-color: #006fe6;
+    background-color: #cc5e08;
+    border-color: #cc5e08;
     padding: 1px 10px;
-    color: #fff
+    color: #fff;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {

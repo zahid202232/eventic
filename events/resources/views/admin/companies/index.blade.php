@@ -133,30 +133,21 @@
 
      <!--  -->
      <div class="form-group">
-        <label  class="required" for="app_layout_settings_date_timezone" >
-        Timezone
+    <label for="app_layout_settings_Terms of service page slug" class="required">
+    Timezone
         </label>
-        <div class="select2-container select2 form-control select2-container-active select2-dropdown-open" id="s2id_app_layout_settings_date_timezone">
-            <a href="javascript:void(0)" class="select2-choice" tabindex="-1">
-                <span class="select2-chosen" id=" select2-chosen-1" >America / New York</span>
-                <abbr class="select2-search-choice-close"></abbr>
-                <span class="select2-arrow" role="presentation"></span>
-                <b class="presentation"></b>
-            </a>
-            <lable for="s2id_autogen1" class="select2-offscreen">Timezone</lable>
-            <input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-1" id="s2id_autogen1" disabled>
-        </div>
+             <div class="form-group">
+              <select class=" js-example-basic-multiple form-control" id="Terms of service">  
+              <option value="Africa/Abidjan">Africa / Abidjan </option>  
+             <option value="Africa/Accra">Africa/Accra </option> 
+             <option value="Africa/Addis_Ababa">Africa/Addis_Ababa </option> 
+             <option value="Africa/Algiers">Africa/Algiers </option> 
+             <option value="Africa/Asmara">Africa/Asmara </option> 
+              
+              </select>
+             </div>  
 
         <!--  -->
-
-        <select id="app_layout_settings_date_timezone" name="app_layout_settings[date_timezone]" class="select2 form-control select2-offscreen" data-sort-options="1" tabindex="-1" title="Timezone">
-          <option value="Africa/Abidjan">Africa / Abidjan </option>  
-          <option value="Africa/Accra">Africa/Accra </option> 
-          <option value="Africa/Addis_Ababa">Africa/Addis_Ababa </option> 
-          <option value="Africa/Algiers">Africa/Algiers </option> 
-          <option value="Africa/Asmara">Africa/Asmara </option> 
-    
-        </select>
  
         <!--  -->
         <!--  -->
@@ -227,22 +218,57 @@
         </label>
         <input type="text" id="app_layout_settings_Website root url" name="app_layout_settings[Website root url]" required="required" aria-describedby="app_layout_settings_date_format_help" class="form-control" value="http://eventic.mtrsolution.com">
      </div>
-
+<br>
      <!--  -->
-   <ul class="nav nav-pills mb-3">
+
+     <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#menu1" class="dis">Website description</a></li>
+    <!-- <li><a data-toggle="tab" href="#menu1">Website description</a></li> -->
+    <li><a data-toggle="tab" href="#menu2" class="dis">Descripción del lugar</a></li>
+    <li><a data-toggle="tab" href="#menu3" class="dis">وصف الموقع</a></li>
+  </ul>
+        </div>
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Website description</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Descripción del lugar</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>وصف الموقع</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+</div>
+<!-- end -->
+
+
+
+<!--  -->
+     
+    <!-- <ul class="nav nav-pills mb-3">
+
     <li class="nav-item" >
-        <a class="nav-link"data-toggle="tab" href="#website_description_en">Website description</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_en" onclick="myFunction()">Website description</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"data-toggle="tab" href="#website_description_fr">Description du site</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_fr" onclick="myFunction()">Description du site</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"data-toggle="tab" href="#website_description_es">Descripción del lugar</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_es" onclick="myFunction()">Descripción del lugar</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link"data-toggle="tab" href="#website_description_ar">وصف الموقع</a>
+        <a class="nav-link"data-toggle="tab" href="#website_description_ar" onclick="myFunction()">وصف الموقع</a>
     </li>
-   </ul>
+   </ul>  -->
+
      
    <!--  -->
   <div class="tab-content">
@@ -352,49 +378,21 @@
         <legend class="col-form-label required">
         Application theme
         </legend>
-        <div id="app_layout_settings_app_theme">
-            <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="app_layout_settings_app_theme_0" name="app_layout_settings[app_theme]" required="required"  class="custom-control-input" value="orange" checked="checked">
-            <label for="custom-control-label required"  for="app_layout_settings_app_theme_0">
-            Orange
-        </label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="app_layout_settings_app_theme_1" name="aapp_layout_settings[app_theme]" required="required"  class="custom-control-input" value="lightblue" >
-            <label for="custom-control-label required"  for="app_layout_settings_app_theme_1">
-            lightblue   
-        </label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="app_layout_settings_app_theme_2" name="aapp_layout_settings[app_theme]" required="required"  class="custom-control-input" value="Dark blue" >
-            <label for="custom-control-label required"  for="app_layout_settings_app_theme_2">
-            Dark blue
-        </label>
-            </div>
+    <div class="color">
+    <input type="radio" id="Pink" name="num" value="Pink" onchange="get(this.id)"><span class="text3">Pink</span>
+    <input type="radio" id="blue" name="num" value=" blue" onchange="get(this.id)"><span class="text3">blue</span>
+    <input type="radio" id="Orange" name="num" value="Orange" onchange="get(this.id)"><span class="text3">Orange</span>
+    <input type="radio" id="red" name="num" value="red" onchange="get(this.id)"><span class="text3">red</span>
+    <input type="radio" id="green" name="num" value="green" onchange="get(this.id)"><span class="text3">green</span>
+     </div>   
 
-            <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="app_layout_settings_app_theme_3" name="aapp_layout_settings[app_theme]" required="required"  class="custom-control-input" value="yellow" >
-            <label for="custom-control-label required"  for="app_layout_settings_app_theme_3">
-            yellow
-        </label>
-            </div>
+     <div id="box1" >
 
-            <div class="custom-control custom-radio custom-control-inline">
-            <input type="radio" id="app_layout_settings_app_theme_4" name="aapp_layout_settings[app_theme]" required="required"  class="custom-control-input" value="purple" >
-            <label for="custom-control-label required"  for="app_layout_settings_app_theme_4">
-            purple
-        </label>
-            </div>
-        
-        </div>
+     </div>
+    
 
      </fieldset>
      
-     <!--  -->
-
-     <div class="form-group">
-        <div id="appThemeColorPreview" class="shadow img-sm" style="background-color: rgb(53, 206, 141);"> </div>
-     </div>
 
     <fieldset class="form-group">
     <legend class="col-form-label required">Application layout</legend>
@@ -547,7 +545,7 @@
         Terms of service page slug
         </label>
              <div class="form-group">
-              <select class="form-control" id="Terms of service">  
+              <select class=" js-example-basic-multiple form-control" id="Terms of service">  
                <option value="service">Terms of service </option>
                <option value="About as">Abbout as</option>
                <option value="Cookie policy">Cookie policy</option>
@@ -588,7 +586,7 @@
     Privacy policy page slug
         </label>
              <div class="form-group">
-              <select class="form-control" id="Terms of service">  
+              <select class="js-example-basic-multiple form-control" id="Terms of service">  
                <option value="service">Terms of service </option>
                <option value="About as">Abbout as</option>
                <option value="Cookie policy">Cookie policy</option>
@@ -648,12 +646,14 @@
     
     
     <!--  -->
+   
+
     <div class="form-group">
     <label for="app_layout_settings_gdpr_compliance_page_slug" class="required">
     Gdpr compliance page slug
         </label>
              <div class="form-group">
-              <select class="form-control" id="Terms of service">  
+              <select class="js-example-basic-multiple form-control" id="Terms of service">  
                <option value="service">Terms of service </option>
                <option value="About as">Abbout as</option>
                <option value="Cookie policy">Cookie policy</option>
@@ -689,7 +689,7 @@
 
 </div>       
 </div>
-
+        <!-- </div> -->
 
 
 @endsection
@@ -745,42 +745,24 @@
 <!--  -->
 <script>
 
+const get = (id) =>{
+    document.getElementById('box1').style.background = document.getElementById(id).value;
 
-$(document).ready(function() {
-    $('.js-example-basic-multiple').select2();
+
+};
+// $(document).ready(function() {
+//     $('.js-example-basic-multiple').select2();
+// });
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
 });
 
-$(document).ready(function () {
-    $('input[name="app_layout_settings[app_theme]"]').change(function () {
-        if ($(this).is(':checked')) {
-            switch ($(this).val()) {
-                case 'orange':
-                        $('#app_layout_settings_primary_color').val('#f67611');
-                        $('#appThemeColorPreview').css('background-color', '#f67611');
-                        break;
-                    case 'lightblue':
-                        $('#app_layout_settings_primary_color').val('#90ccf4');
-                        $('#appThemeColorPreview').css('background-color', '#90ccf4');
-                        break;
-                        case 'darkblue':
-                        $('#app_layout_settings_primary_color').val('#3500d3');
-                        $('#appThemeColorPreview').css('background-color', '#3500d3');
-                        break;
-                    case 'yellow':
-                        $('#app_layout_settings_primary_color').val('#ffbd54');
-                        $('#appThemeColorPreview').css('background-color', '#ffbd54');
-                        break;
-                    case 'purple':
-                        $('#app_layout_settings_primary_color').val('#44318d');
-                        $('#appThemeColorPreview').css('background-color', '#44318d');
-                        break;
 
-                    default:
-                }
-           }
-       });
-       $('input[name="app_layout_settings[app_theme]"]').trigger('change');
-});
+
+
+
 
 </script>
 @endsection
